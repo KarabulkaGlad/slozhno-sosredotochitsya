@@ -92,8 +92,11 @@
   border: 1px solid rgba(var(--accent-color-rgb), 0.4);
 }
 
-.header__theme-menu-button:focus-visible {
+.header__theme-menu-button:focus {
   outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid currentColor;
 }
 
@@ -203,6 +206,10 @@
 
 .content__link:hover {
   border-bottom: 1px solid currentColor;
+}
+
+.content__link:focus {
+  outline: none;
 }
 
 .content__link:focus-visible {
