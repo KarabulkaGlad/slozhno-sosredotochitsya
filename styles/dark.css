@@ -1,10 +1,18 @@
 
 .page.theme_dark {
+  --font: 'IBM Plex Mono';
   --text-color: #F1B2CE;
+  --text-color-rgb: 53, 52, 48;
   --accent-color: #FF0070;
-  --accent-color-rgb: 255, 0, 112;
   --bg-color: #000028;
+  --page-title-color: #DB00FF;
+  --page-title-shadow-color: #FF0070;
+  --title-color: #FF0070;
+  --highlighted-accent-text-color: #000028;
+  --header-decorated-color: #FF0070;
+  --header-decorated-color-rgb: 255, 0, 112;
 }
 
-
-
+.theme_dark .header__decoration-item {
+  display: block;
+}

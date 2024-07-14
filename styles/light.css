@@ -1,90 +1,45 @@
 
 @media (prefers-color-scheme: light) {
   .page.theme_auto {
-    --text-color: #353430;
-    --text-color-rgb: 53, 52, 48;
-    --accent-color: #FF8DCB;
-    --bg-color: #FFF1F7;
-    --title-color: #FFC2E6;
-    background-image: url(../images/cover-image-light.png);
-  }
-
-  .theme_auto .header__decoration-item  {
-    display: none;
-  }
-
-  .theme_auto .header__title {
-    color: var(--title-color);
-  }
-
-  .theme_auto .header__theme-menu-button,
-  .theme_auto .highlighted-accent-color-text,
-  .theme_auto .content__title {
-    color: var(--text-color);
-  }
-
-  .theme_auto .decorated-zone::after,
-  .theme_auto .decorated-zone::before {
-    border-color: var(--text-color);
-  }
-
-  .theme_auto .header__theme-menu-button:hover {
-    border: 1px solid rgba(var(--text-color-rgb), 0.4);
-  }
-
-  @media (width >= 1024px) {
-    .theme_auto .header__title {
-      text-shadow: 4px 4px 0px #FF0070;
-
-    }
-    .theme_auto .footer__title {
-      text-shadow: 2px 2px 0px #FF0070;
-
-    }
-  }
-}
-
-
-.page.theme_light {
+    --font: 'IBM Plex Mono';
   --text-color: #353430;
   --text-color-rgb: 53, 52, 48;
   --accent-color: #FF8DCB;
   --bg-color: #FFF1F7;
-  --title-color: #FFC2E6;
+  --page-title-color: #FFC2E6;
+  --page-title-shadow-color: #FF8DCB;
+  --title-color: #353430;
+  --highlighted-accent-text-color: #353430;
+  --header-decorated-color: #353430;
+  --header-decorated-color-rgb: 53, 52, 48;
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  @media (width >= 1024px) {
+    .page.theme_auto {
+      --page-title-shadow-color: #FF0070;
+    }
+  }
+}
+
+.page.theme_light {
+  --font: 'IBM Plex Mono';
+  --text-color: #353430;
+  --text-color-rgb: 53, 52, 48;
+  --accent-color: #FF8DCB;
+  --bg-color: #FFF1F7;
+  --page-title-color: #FFC2E6;
+  --page-title-shadow-color: #FF8DCB;
+  --title-color: #353430;
+  --highlighted-accent-text-color: #353430;
+  --header-decorated-color: #353430;
+  --header-decorated-color-rgb: 53, 52, 48;
   background-image: url(../images/cover-image-light.png);
 }
 
-.theme_light .header__decoration-item {
-  display: none;
-}
-
-.theme_light .header__title {
-  color: var(--title-color);
-}
-
-.theme_light .header__theme-menu-button,
-.theme_light .highlighted-accent-color-text,
-.theme_light .content__title {
-  color: var(--text-color);
-}
-
-.theme_light .decorated-zone::after,
-.theme_light .decorated-zone::before {
-  border-color: var(--text-color);
-}
-
-.theme_light .header__theme-menu-button:hover {
-  border: 1px solid rgba(var(--text-color-rgb), 0.4);
-}
-
 @media (width >= 1024px) {
-  .theme_light .header__title {
-    text-shadow: 4px 4px 0px #FF0070;
-
-  }
-  .theme_light .footer__title {
-    text-shadow: 2px 2px 0px #FF0070;
-
+  .page.theme_light {
+    --page-title-shadow-color: #FF0070;
   }
 }
 
