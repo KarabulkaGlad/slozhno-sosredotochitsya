@@ -1,31 +1,30 @@
 
 @media (prefers-color-scheme: light) {
-  .page.theme_auto {
-    --font: 'IBM Plex Mono';
-  --text-color: #353430;
-  --text-color-rgb: 53, 52, 48;
-  --accent-color: #FF8DCB;
-  --bg-color: #FFF1F7;
-  --page-title-color: #FFC2E6;
-  --page-title-shadow-color: #FF8DCB;
-  --title-color: #353430;
-  --highlighted-accent-text-color: #353430;
-  --header-decorated-color: #353430;
-  --header-decorated-color-rgb: 53, 52, 48;
+  :root .theme_auto {
+    --text-color: #353430;
+    --accent-color: #FF8DCB;
+    --bg-color: #FFF1F7;
+    --page-title-color: #FFC2E6;
+    --page-title-shadow-color: #FF8DCB;
+    --title-color: #353430;
+    --highlighted-accent-text-color: #353430;
+    --header-decorated-color: #353430;
+    --header-decorated-color-rgb: 53, 52, 48;
+  }
+
+  .page {
     background-image: url(../images/cover-image-light.png);
   }
 
   @media (width >= 1024px) {
-    .page.theme_auto {
+    :root .theme_auto {
       --page-title-shadow-color: #FF0070;
     }
   }
 }
 
-.page.theme_light {
-  --font: 'IBM Plex Mono';
+:root .theme_light {
   --text-color: #353430;
-  --text-color-rgb: 53, 52, 48;
   --accent-color: #FF8DCB;
   --bg-color: #FFF1F7;
   --page-title-color: #FFC2E6;
@@ -34,11 +33,14 @@
   --highlighted-accent-text-color: #353430;
   --header-decorated-color: #353430;
   --header-decorated-color-rgb: 53, 52, 48;
+}
+
+.page.theme_light  {
   background-image: url(../images/cover-image-light.png);
 }
 
 @media (width >= 1024px) {
-  .page.theme_light {
+  :root .theme_light {
     --page-title-shadow-color: #FF0070;
   }
 }
